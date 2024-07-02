@@ -90,6 +90,11 @@
     @apply hidden;
   }
 
+  .prose :where(hr) {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+
   /* ===== scrollbar ===== */
   html {
     overflow-y: scroll;
