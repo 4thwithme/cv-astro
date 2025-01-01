@@ -17,8 +17,6 @@ export const GET = async () => {
     const file = { content };
     const buffer = await html_to_pdf.generatePdf(file, options);
 
-    // eslint-disable-next-line no-console
-    console.log("buffer", buffer);
     return new Response(buffer, {
       headers: { "Content-Type": "application/pdf" },
     });
